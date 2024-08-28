@@ -1,12 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Harmonyq</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="welcome" class="section">
+      <h1>Bienvenido a la mejor tienda de beats del mundo!!</h1>
+      <input
+        type="text"
+        id="userName"
+        placeholder="¿Cómo prefieres que te llamemos?"
+      />
+      <button id="startBtn">Iniciar</button>
+    </div>
+
+    <div id="genres" class="section" style="display: none">
+      <h2>Géneros Disponibles</h2>
+      <ul id="genreList"></ul>
+    </div>
+
+    <div id="beats" class="section" style="display: none">
+      <h2>Beats Disponibles</h2>
+      <ul id="beatList"></ul>
+      <button id="finishPurchaseBtn">Finalizar Compra</button>
+    </div>
+
+    <div id="cart" class="section" style="display: none">
+      <h2>Carrito de Compras</h2>
+      <ul id="cartList"></ul>
+      <button id="clearCartBtn">Eliminar Beats del Carrito</button>
+      <button id="checkoutBtn">Proceder al Pago</button>
+    </div>
+
+    <div id="checkout" class="section" style="display: none">
+      <h2>Resumen de Compra</h2>
+      <p id="totalAmount"></p>
+      <p id="installmentAmount"></p>
+      <button id="backToGenresBtn">Volver a Explorar Géneros</button>
+    </div>
+
     <script src="index.js"></script>
   </body>
 </html>
